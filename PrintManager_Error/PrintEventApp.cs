@@ -39,9 +39,16 @@ namespace PrintManager_Error
 
         public void OnExporting(object sender, FileExportingEventArgs e)
         {
-            PrintManager printManager = e.Document.PrintManager;
-            ViewSet vs = printManager.ViewSheetSetting.CurrentViewSheetSet.Views;
-            TaskDialog.Show("Printing", $"Printing {vs.Size} Views based on printManager.ViewSheetSetting.CurrentViewSheetSet.Views");
+            try
+            {
+                PrintManager printManager = e.Document.PrintManager;
+                ViewSet vs = printManager.ViewSheetSetting.CurrentViewSheetSet.Views;
+                TaskDialog.Show("Exporting", $"Exporting {vs.Size} Views based on printManager.ViewSheetSetting.CurrentViewSheetSet.Views");
+            }
+            catch (Exception ex)
+            {
+                TaskDialog.Show("Exporting Error", ex.Message);
+            }
         }
     }
 }
