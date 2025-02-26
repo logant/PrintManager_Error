@@ -41,7 +41,7 @@ namespace PrintManager_Error
         {
             PrintManager printManager = e.Document.PrintManager;
             ViewSet vs = printManager.ViewSheetSetting.CurrentViewSheetSet.Views;
-            TaskDialog.Show("Printing", $"Printing {vs.Size} Views based on printManager.ViewSheetSetting.CurrentViewSheetSet.Views");
+            TaskDialog.Show("Exporting", $"Exporting {vs.Size} Views based on printManager.ViewSheetSetting.CurrentViewSheetSet.Views");
         }
     }
 }
