@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>PrintManager Error</Name>
+		<Assembly>PrintManager_Error.dll</Assembly>
+		<AddInId>908109aa-17bf-48b4-8fe5-0b2db0fb462c</AddInId>
+		<FullClassName>PrintManager_Error.PrintEventApp</FullClassName>
+		<VendorId>LINE</VendorId>
+		<VendorDescription>HKS LINE</VendorDescription>
+	</AddIn>
+</RevitAddIns>
